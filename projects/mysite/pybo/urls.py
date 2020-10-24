@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('1/', views.test),
+    path('<int:question_id>/', views.detail),
 ]
